@@ -1,0 +1,86 @@
+.CurrentColorTitle{
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
+}
+.CurrentColor{
+    border: 1px solid #333;
+    grid-column: 2;
+    grid-row: 1;
+    background-color: #f4f4f4;
+}
+.SelectTitle{
+    grid-column: 1 /span 2;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+}
+.SelectGrid{
+    border: 1px solid #333;
+    grid-column: 1 /span 2;
+    grid-row: 4;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(17, 100px);
+    overflow: scroll;
+}
+
+@media (min-width: 1000px) {
+   .CurrentColorTitle{
+        grid-column: 1;
+        grid-row: 2;
+        align-self: center;
+        justify-self: center;
+   }
+   .CurrentColor{
+        border-bottom: 0px;
+        grid-column: 2;
+        grid-row: 2;
+        background-color: #f4f4f4;
+   }
+   .SelectTitle{
+        grid-column: 1;
+        grid-row: 3;
+        align-self: center;
+        justify-self: center;
+   }
+   .SelectGrid{
+        border: 1px solid #333;
+        grid-column: 2;
+        grid-row: 3 / 5;
+        display: grid;
+        grid-template-columns: 20% 20% auto 20% 20%;
+        grid-template-rows: 20% 20% auto 20% 20%;
+        overflow: hidden;
+   }
+}
+
+@media (min-width: 1600px) {
+   .CurrentColorTitle{
+        grid-column: 1;
+        grid-row: 2;
+        align-self: center;
+        justify-self: center;
+   }
+   .CurrentColor{
+        grid-column: 2;
+        grid-row: 2;
+        background-color: #f4f4f4;
+   }
+   .SelectTitle{
+        grid-column: 1;
+        grid-row: 3;
+        align-self: center;
+        justify-self: center;
+   }
+   .SelectGrid{
+        border: 1px solid #333;
+        grid-column: 2;
+        grid-row: 3 / 5;
+        display: grid;
+        grid-template-columns: 20% 20% auto 20% 20%;
+        grid-template-rows: 20% 20% auto 20% 20%;
+        overflow: hidden;
+   }
+}

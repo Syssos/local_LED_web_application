@@ -1,0 +1,28 @@
+.footer_title {
+    color: white;
+    text-decoration: none;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
+}
+
+@media (min-width: 1000px) {
+    .footer_title {
+        color: white;
+        grid-column: 3;
+        grid-row: 1;
+        align-self: center;
+        justify-self: center;
+    }
+}
+
+@media (min-width: 1600px) {
+    .footer_title {
+        color: white;
+        grid-column: 3;
+        grid-row: 1;
+        align-self: center;
+        justify-self: center;
+    }
+}

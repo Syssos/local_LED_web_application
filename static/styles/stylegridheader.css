@@ -1,0 +1,104 @@
+/* Min Width */
+.header_title {
+    grid-column: 3;
+    grid-row: 1;
+    width: 70%;
+    height: 90%;
+    align-self: center;
+    justify-self: center;
+    border-radius: 50%;
+    background-image: url("../images/Led.jpg");
+    background-size: cover;
+}
+.header_option {
+    grid-column: 3;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+    text-decoration: none;
+    color: red;
+    /* padding: 5%; */
+ }
+ .header_option_two {
+     grid-column: 3;
+     grid-row: 3;
+     align-self: center;
+     justify-self: center;
+     text-decoration: none;
+     color: red;
+     /* padding: 5%; */
+    }
+
+/* General */
+.header_option_two:hover, .header_option:hover {
+    border-bottom: 2px solid teal;
+}
+.header_option.active, .header_option_two.active{
+    border-bottom: 2px solid red;
+}
+
+/* Scaling */
+/* Medium */
+@media (min-width: 1000px) {
+    .header_title {
+        grid-column: 2;
+        grid-row: 1 /span 2;
+        width: 90%;
+        height: 90%;
+        align-self: center;
+        justify-self: center;
+        border-radius: 50%;
+        background-image: url("../images/Led.jpg");
+        background-size: cover;
+    }
+    .header_option {
+        grid-column: 4;
+        grid-row: 1 /span 2;
+        align-self: center;
+        justify-self: center;
+        text-decoration: none;
+        color: red;
+        padding: 5%;
+     }
+     .header_option_two {
+        grid-column: 5;
+        grid-row: 1 /span 2;
+        align-self: center;
+        justify-self: center;
+        text-decoration: none;
+        color: red;
+        padding: 5%;
+     }
+}
+/* Fullscreen */
+@media (min-width: 1600px) {
+   .header_title {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+        width: 50%;
+        height: 90%;
+        align-self: center;
+        justify-self: center;
+        border-radius: 50%;
+        background-image: url("../images/Led.jpg");
+        background-size: cover;
+   }
+   .header_option {
+        grid-column: 1 /span 2;
+        grid-row: 3;
+        align-self: center;
+        justify-self: center;
+        text-decoration: none;
+        color: red;
+        padding: 5%;
+    }
+    .header_option_two {
+        grid-column: 1 /span 2;
+        grid-row: 4;
+        align-self: center;
+        justify-self: center;
+        text-decoration: none;
+        color: red;
+        padding: 5%;
+    }
+}
